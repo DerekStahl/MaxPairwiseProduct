@@ -23,7 +23,7 @@ srand(time(NULL));
 cout<< "Here is the randomly generated vector: \n";
 
 for(int i = 0; i < n; i++){
-    randomVector.push_back(rand() % 10);
+    randomVector.push_back(rand() % 100000);
     cout<< randomVector[i] << " ";
 }
 cout<< "\n";
@@ -68,6 +68,6 @@ for(int i = 0; i < n; i++){
     }
 }
 cout<< "The second max is " << randomVector[max2Index] << "\n";
-cout<< "The Maximum pairwise product is " << randomVector[max1Index] * randomVector[max2Index] << "\n";
+cout<< "The Maximum pairwise product is " <<(long long)(randomVector[max1Index] * randomVector[max2Index]) << "\n";
 return 0;
 }
